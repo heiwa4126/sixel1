@@ -2,5 +2,11 @@ import sys
 
 from sixel import converter
 
-c = converter.SixelConverter("foo.png")
-c.write(sys.stdout)
+
+def main():
+    c = converter.SixelConverter("example/foo.png")
+    c.write(sys.stdout)
+
+
+if __name__ == "__main__":
+    main()
